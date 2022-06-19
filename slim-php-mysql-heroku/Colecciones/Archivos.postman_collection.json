@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "3cacf601-5cb5-44b9-96d6-07af42e9c2f8",
+		"name": "Archivos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Descargar Productos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU1Mzk1NTEsImV4cCI6MjI2MDMzOTU1MSwiYXVkIjoiYTYyNWNhYzBmNmNiODMwMmUxNDQ5MzVhZTg2OWQ5YjA4Mzk2NDQ4YyIsImRhdGEiOnsiaWRVc3VhcmlvIjoyLCJ1c3VhcmlvIjoic3RlZmFubyIsImNsYXZlIjoic3RlMTIzIn0sImFwcCI6IlRlc3QgSldUIn0.iyW-iwOS0sXVdO3Ti-G_qHv3InAvYk8_5_H_noJXdpg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ProductosCSV",
+							"type": "file",
+							"src": "/C:/Users/Gigabyte/Desktop/SPRINT3/slim-php-mysql-heroku/CSV/ProductosCSV.csv",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:666/archivos/auditoria",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"archivos",
+						"auditoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cargar Productos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU1Mzk1NTEsImV4cCI6MjI2MDMzOTU1MSwiYXVkIjoiYTYyNWNhYzBmNmNiODMwMmUxNDQ5MzVhZTg2OWQ5YjA4Mzk2NDQ4YyIsImRhdGEiOnsiaWRVc3VhcmlvIjoyLCJ1c3VhcmlvIjoic3RlZmFubyIsImNsYXZlIjoic3RlMTIzIn0sImFwcCI6IlRlc3QgSldUIn0.iyW-iwOS0sXVdO3Ti-G_qHv3InAvYk8_5_H_noJXdpg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ProductosCSV",
+							"type": "file",
+							"src": "/C:/Users/Gigabyte/Desktop/SPRINT3/slim-php-mysql-heroku/CSV/ProductosCSV.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:666/archivos/productoscargar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"archivos",
+						"productoscargar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Descargar Auditoria Por Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU1Mzk1NTEsImV4cCI6MjI2MDMzOTU1MSwiYXVkIjoiYTYyNWNhYzBmNmNiODMwMmUxNDQ5MzVhZTg2OWQ5YjA4Mzk2NDQ4YyIsImRhdGEiOnsiaWRVc3VhcmlvIjoyLCJ1c3VhcmlvIjoic3RlZmFubyIsImNsYXZlIjoic3RlMTIzIn0sImFwcCI6IlRlc3QgSldUIn0.iyW-iwOS0sXVdO3Ti-G_qHv3InAvYk8_5_H_noJXdpg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:666/archivos/auditoria/50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"archivos",
+						"auditoria",
+						"50"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Descargar Auditoria",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU1Mzk1NTEsImV4cCI6MjI2MDMzOTU1MSwiYXVkIjoiYTYyNWNhYzBmNmNiODMwMmUxNDQ5MzVhZTg2OWQ5YjA4Mzk2NDQ4YyIsImRhdGEiOnsiaWRVc3VhcmlvIjoyLCJ1c3VhcmlvIjoic3RlZmFubyIsImNsYXZlIjoic3RlMTIzIn0sImFwcCI6IlRlc3QgSldUIn0.iyW-iwOS0sXVdO3Ti-G_qHv3InAvYk8_5_H_noJXdpg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:666/archivos/auditoria",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"archivos",
+						"auditoria"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

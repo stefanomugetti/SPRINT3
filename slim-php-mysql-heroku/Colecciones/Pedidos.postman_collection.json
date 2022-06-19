@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "e9317b26-88da-4c04-9821-f6569ec7bf25",
+		"name": "Pedidos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Alta Pedido",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU1Mzk1NTEsImV4cCI6MjI2MDMzOTU1MSwiYXVkIjoiYTYyNWNhYzBmNmNiODMwMmUxNDQ5MzVhZTg2OWQ5YjA4Mzk2NDQ4YyIsImRhdGEiOnsiaWRVc3VhcmlvIjoyLCJ1c3VhcmlvIjoic3RlZmFubyIsImNsYXZlIjoic3RlMTIzIn0sImFwcCI6IlRlc3QgSldUIn0.iyW-iwOS0sXVdO3Ti-G_qHv3InAvYk8_5_H_noJXdpg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"IdUsuario\" : \"2\",\r\n    \"IdMesa\" : \"2\",\r\n    \"nombreCliente\" : \"pepito\",\r\n    \"pathFoto\" : \"foto.jpg\",\r\n    \"productosPedidos\":[\r\n        {\r\n            \"idProducto\" : \"8\",\r\n            \"cantidad\" : 1\r\n        },\r\n        {\r\n            \"idProducto\" : \"7\",\r\n            \"cantidad\" : \"1\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:666/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Pedidos/Detalles",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU1Mzk1NTEsImV4cCI6MjI2MDMzOTU1MSwiYXVkIjoiYTYyNWNhYzBmNmNiODMwMmUxNDQ5MzVhZTg2OWQ5YjA4Mzk2NDQ4YyIsImRhdGEiOnsiaWRVc3VhcmlvIjoyLCJ1c3VhcmlvIjoic3RlZmFubyIsImNsYXZlIjoic3RlMTIzIn0sImFwcCI6IlRlc3QgSldUIn0.iyW-iwOS0sXVdO3Ti-G_qHv3InAvYk8_5_H_noJXdpg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:666/pedidos/29",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"pedidos",
+						"29"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Pedidos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU1Mzk1NTEsImV4cCI6MjI2MDMzOTU1MSwiYXVkIjoiYTYyNWNhYzBmNmNiODMwMmUxNDQ5MzVhZTg2OWQ5YjA4Mzk2NDQ4YyIsImRhdGEiOnsiaWRVc3VhcmlvIjoyLCJ1c3VhcmlvIjoic3RlZmFubyIsImNsYXZlIjoic3RlMTIzIn0sImFwcCI6IlRlc3QgSldUIn0.iyW-iwOS0sXVdO3Ti-G_qHv3InAvYk8_5_H_noJXdpg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:666/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Pedidos por ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU1Mzk1NTEsImV4cCI6MjI2MDMzOTU1MSwiYXVkIjoiYTYyNWNhYzBmNmNiODMwMmUxNDQ5MzVhZTg2OWQ5YjA4Mzk2NDQ4YyIsImRhdGEiOnsiaWRVc3VhcmlvIjoyLCJ1c3VhcmlvIjoic3RlZmFubyIsImNsYXZlIjoic3RlMTIzIn0sImFwcCI6IlRlc3QgSldUIn0.iyW-iwOS0sXVdO3Ti-G_qHv3InAvYk8_5_H_noJXdpg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:666/pedidos/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"pedidos",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar Pedido",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Estado\" : \"Entregado\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:666/pedidos/24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"pedidos",
+						"24"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

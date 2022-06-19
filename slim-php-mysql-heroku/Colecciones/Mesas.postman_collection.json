@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "118c0252-c426-46f3-818e-4f4825b99bc5",
+		"name": "Mesas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Alta Mesa",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU1Mzk1NTEsImV4cCI6MjI2MDMzOTU1MSwiYXVkIjoiYTYyNWNhYzBmNmNiODMwMmUxNDQ5MzVhZTg2OWQ5YjA4Mzk2NDQ4YyIsImRhdGEiOnsiaWRVc3VhcmlvIjoyLCJ1c3VhcmlvIjoic3RlZmFubyIsImNsYXZlIjoic3RlMTIzIn0sImFwcCI6IlRlc3QgSldUIn0.iyW-iwOS0sXVdO3Ti-G_qHv3InAvYk8_5_H_noJXdpg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "estado",
+							"value": "Libre",
+							"type": "default"
+						},
+						{
+							"key": "descripcion",
+							"value": "Mesa13",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:666/mesas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"mesas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Mesas",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU1Mzk1NTEsImV4cCI6MjI2MDMzOTU1MSwiYXVkIjoiYTYyNWNhYzBmNmNiODMwMmUxNDQ5MzVhZTg2OWQ5YjA4Mzk2NDQ4YyIsImRhdGEiOnsiaWRVc3VhcmlvIjoyLCJ1c3VhcmlvIjoic3RlZmFubyIsImNsYXZlIjoic3RlMTIzIn0sImFwcCI6IlRlc3QgSldUIn0.iyW-iwOS0sXVdO3Ti-G_qHv3InAvYk8_5_H_noJXdpg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:666/mesas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"mesas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Mesa Por Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU1Mzk1NTEsImV4cCI6MjI2MDMzOTU1MSwiYXVkIjoiYTYyNWNhYzBmNmNiODMwMmUxNDQ5MzVhZTg2OWQ5YjA4Mzk2NDQ4YyIsImRhdGEiOnsiaWRVc3VhcmlvIjoyLCJ1c3VhcmlvIjoic3RlZmFubyIsImNsYXZlIjoic3RlMTIzIn0sImFwcCI6IlRlc3QgSldUIn0.iyW-iwOS0sXVdO3Ti-G_qHv3InAvYk8_5_H_noJXdpg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:666/mesas/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"mesas",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Mesa",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU1Mzk1NTEsImV4cCI6MjI2MDMzOTU1MSwiYXVkIjoiYTYyNWNhYzBmNmNiODMwMmUxNDQ5MzVhZTg2OWQ5YjA4Mzk2NDQ4YyIsImRhdGEiOnsiaWRVc3VhcmlvIjoyLCJ1c3VhcmlvIjoic3RlZmFubyIsImNsYXZlIjoic3RlMTIzIn0sImFwcCI6IlRlc3QgSldUIn0.iyW-iwOS0sXVdO3Ti-G_qHv3InAvYk8_5_H_noJXdpg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:666/mesas/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"mesas",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar Mesa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"estado\":\"vacio\",\r\n\"descripcion\":\"pata rota\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:666/mesas/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"mesas",
+						"2"
+					],
+					"query": [
+						{
+							"key": "estado",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

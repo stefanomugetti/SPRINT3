@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "62b8ecb4-c4cb-4da8-9f97-665789101834",
+		"name": "Login",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "usuario",
+							"value": "stefano",
+							"type": "default"
+						},
+						{
+							"key": "clave",
+							"value": "ste123",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:666/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "usuario",
+							"value": "stefano",
+							"disabled": true
+						},
+						{
+							"key": "clave",
+							"value": "mugetti",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
